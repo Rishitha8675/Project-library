@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>My library</title>
+    <style>
+        h1{
+            color:white;
+            background-color:  rgb(17, 20, 6);
+            border-style:solid;
+            border-color: rgb(95, 113, 4);
+            border-width:25px;
+            border-radius: 10px;
+            font-size: 4rem;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 1px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            top: 20px;
+        }   
+
+        #des1{
+            color:rgb(95, 113, 4);
+            font-size: 2rem;
+            font-style: italic;
+            text-align: center;
+            position:relative;
+            top: 40px;
+        }
+        div{
+            padding: 5px 5px;
+            background-color: rgb(6, 15, 4);
+            width:auto;
+            color:white;
+            line-height: 10%;
+            text-align: center;
+            position: relative;
+            top: 60px;
+            border-radius: 10px;
+            border: 1px rgb(38, 133, 173);
+
+        }
+        form {
+            background-color: rgb(238, 239, 235);
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 5px 100px 20px ;
+            text-align:center;
+            position:relative;
+            top: 65px;
+            font-size: large;}
+        input[type="text"] {
+            width: 300px; /* Set the width */
+            height: 40px; /* Set the height */
+            font-size: 16px; /* Increase the font size for better visibility */
+        }
+        .class1{
+            padding: 3px 5px 3px 3px;
+        }
+
+        input[type="submit"] {
+            position: relative; /* Allows top positioning */
+            text-align: right; /* Centers the text */
+            top: 20px; /* Moves the button down by 20px */
+            width: 100px; /* Sets the width of the button */
+            height: 40px; /* Sets the height of the button */
+            background-color: #4CAF50; /* Adds a background color */
+            color: white; /* Sets the text color */
+            border: none; /* Removes default borders */
+            border-radius: 5px; /* Rounds the corners */
+            font-size: 16px; 
+            cursor: pointer; 
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO THE LIBRARY</h1>
+    <p id="des1"> You can explore the world of knowledge here</p>
+    <div>
+        <h2>Add book to the library collection</h2>
+    </div>
+    <form action="">
+        <br>
+        <br>
+        <span class="1">Book title:</span>
+        <input type="text" name="book_title" placeholder="Enter the title of the book" required>
+        <br>
+        <br>
+        <span class="1">Book Author:</span>
+        <input type="text" name="Author" placeholder="Enter the author of the book" required>
+        <br>
+        <br>
+        <span class="1">Book size:</span>
+        <input type="text" name="book_size" placeholder="Enter the total pages of the book" required>
+        <br>
+        <br>
+        <span class="1">Book price:</span>
+        <input type="text" name="book_cost" placeholder="Enter the cost of the book" required>
+        <br>
+        <br>
+        <span class="1">Year of publication:</span>
+        <input type="text" name="year_of_publication" placeholder="Enter year of publication" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
